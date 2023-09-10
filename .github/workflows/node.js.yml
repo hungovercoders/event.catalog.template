@@ -30,9 +30,9 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
         cache-dependency-path: 'my-catalog/package-lock.json'
-    - run: |
-          npm install
-          npm run build
+    - run: npm install
+      working-directory: my-catalog
+    - run: npm run build
       working-directory: my-catalog
     - name: List directory contents Post Build
       run: ls -al my-catalog
