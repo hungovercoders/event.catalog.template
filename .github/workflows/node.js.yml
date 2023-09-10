@@ -45,3 +45,10 @@ jobs:
       run: ls -al my-catalog/public
     - name: List directory contents Out
       run: ls -al my-catalog/out
+    - name: Deploy Website to Azure
+      uses: bacongobbler/azure-blob-storage-upload-action@v1.1
+      with:
+        source_dir: 'my-catalog/out' # replace with your directory path
+        container_name: $web
+        connection_string: 'DefaultEndpointsProtocol=https;AccountName=${{ secrets.AZURE_STORAGE_ACCOUNT_NAME }};AccountKey=${{ secrets.AZURE_SECRET }};EndpointSuffix=core.windows.net'
+        sync: true
