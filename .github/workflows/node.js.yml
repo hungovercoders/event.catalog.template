@@ -53,7 +53,7 @@ jobs:
       uses: azure/CLI@v1
       with:
         inlineScript: |
-            az storage blob upload-batch --account-name lrneventcatsaeundgrf --auth-mode key -d '$web' -s my-catalog/out
+            az storage blob upload-batch --account-name lrneventcatsaeundgrf --auth-mode key -d '$web' -s my-catalog/out --overwrite
     # - name: Purge CDN endpoint
     #   uses: azure/CLI@v1
     #   with:
