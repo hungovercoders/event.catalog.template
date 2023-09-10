@@ -34,5 +34,13 @@ jobs:
       working-directory: my-catalog
     - run: npm run build
       working-directory: my-catalog
-    - name: List directory contents Post Build
-      run: ls -al my-catalog
+    - name: List directory contents domains
+      run: ls -al my-catalog/domains
+    - name: List directory contents events
+      run: ls -al my-catalog/events
+    - name: List directory contents public
+      run: ls -al my-catalog/public
+    - name: List directory contents services
+      run: ls -al my-catalog/public
+    - name: List directory contents Out
+      run: ls -al my-catalog/out
