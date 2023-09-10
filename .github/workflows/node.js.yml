@@ -27,8 +27,8 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: npm ci
-      working-directory: ./my-catalog
+      working-directory: my-catalog
     - run: npm run build --if-present
-      working-directory: ./my-catalog
+      working-directory: my-catalog
     - run: npm test
-      working-directory: ./my-catalog
+      working-directory: my-catalog
