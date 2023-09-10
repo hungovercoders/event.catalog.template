@@ -31,6 +31,10 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
         cache-dependency-path: 'my-catalog/package-lock.json'
+    - name: Use azure creds
+      uses: azure/login@v1
+      with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
     - run: npm install
       working-directory: my-catalog
     - run: npm run build
@@ -45,28 +49,16 @@ jobs:
       run: ls -al my-catalog/public
     - name: List directory contents Out
       run: ls -al my-catalog/out
-
-  upload:
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-    - uses: actions/checkout@v3
-    - uses: azure/login@v1
-      with:
-          creds: ${{ secrets.AZURE_CREDENTIALS }}
-
     - name: Upload to blob storage
       uses: azure/CLI@v1
       with:
         inlineScript: |
             az storage blob upload-batch --account-name lrneventcatsaeundgrf --auth-mode key -d '$web' -s my-catalog/out
-      
     - name: Purge CDN endpoint
       uses: azure/CLI@v1
       with:
         inlineScript: |
            az cdn endpoint purge --content-paths  "/*" --profile-name "CDN_PROFILE_NAME" --name "CDN_ENDPOINT" --resource-group "lrn-eventcatalog-rg"
-
   # Azure logout
     - name: logout
       run: |
