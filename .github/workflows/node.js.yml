@@ -47,14 +47,28 @@ jobs:
       run: ls -al my-catalog/out
 
   upload:
-    needs: build
     runs-on: ubuntu-latest
+    needs: build
     steps:
-
-    - uses: actions/checkout@v2
-    - uses: bacongobbler/azure-blob-storage-upload-action@v1.1
+    - uses: actions/checkout@v3
+    - uses: azure/login@v1
       with:
-        source_dir: 'my-catalog/out' # replace with your directory path
-        container_name: $web
-        connection_string: 'DefaultEndpointsProtocol=https;AccountName=${{ secrets.AZURE_STORAGE_ACCOUNT_NAME }};AccountKey=${{ secrets.AZURE_SECRET }};EndpointSuffix=core.windows.net'
-        sync: true
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+    - name: Upload to blob storage
+      uses: azure/CLI@v1
+      with:
+        inlineScript: |
+            az storage blob upload-batch --account-name lrneventcatsaeundgrf --auth-mode key -d '$web' -s my-catalog/out
+      
+    - name: Purge CDN endpoint
+      uses: azure/CLI@v1
+      with:
+        inlineScript: |
+           az cdn endpoint purge --content-paths  "/*" --profile-name "CDN_PROFILE_NAME" --name "CDN_ENDPOINT" --resource-group "lrn-eventcatalog-rg"
+
+  # Azure logout
+    - name: logout
+      run: |
+            az logout
+      if: always()
