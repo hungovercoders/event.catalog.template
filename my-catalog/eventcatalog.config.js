@@ -19,7 +19,7 @@ module.exports = {
     src: 'logo.svg',
   },
   footerLinks: [
-    { label: 'Events', href: '/events' },
+    { label: 'Domains', href: '/domains' },
     { label: 'Services', href: '/services' },
     { label: 'Visualiser', href: '/visualiser' },
     { label: '3D Node Graph', href: '/overview' },
