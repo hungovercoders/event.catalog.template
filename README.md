@@ -5,8 +5,10 @@
 - [My Event Cat](https://lrneventcatsaeundgrf.z16.web.core.windows.net/)
 - [Order Complete Schema](https://lrneventcatsaeundgrf.blob.core.windows.net/schemas/OrderComplete/schema.json)
 
-## Automation Fixes
+## Automation Fixes Needed
 
 - Need to work out why not allowing me to add new users
 - Need to add services in somewhere - maybe in event list?
 - Need to validate the schemas returned by chatgpt and feedback e.g. if not valid JSON for event schema and repeat back until schema valid
+- Why does it fail if events folder is empty when doing everything by domains?
+- How can I rip down the static files in the website container or do a diff to remove old ones?
