@@ -1,0 +1,67 @@
+[
+  {
+    "domain": "UserManagement",
+    "event": "UserRegistered",
+    "team": "RegistrationTeam"
+  },
+  {
+    "domain": "DogManagement",
+    "event": "DogProfileCreated",
+    "team": "DogManagementTeam"
+  },
+  {
+    "domain": "DogManagement",
+    "event": "DogProfileUpdated",
+    "team": "DogManagementTeam"
+  },
+  {
+    "domain": "WalkManagement",
+    "event": "WalkRequested",
+    "team": "WalkTeam"
+  },
+  {
+    "domain": "WalkManagement",
+    "event": "WalkScheduled",
+    "team": "SchedulingTeam"
+  },
+  {
+    "domain": "WalkManagement",
+    "event": "WalkerAssigned",
+    "team": "SchedulingTeam"
+  },
+  {
+    "domain": "WalkManagement",
+    "event": "WalkInitiated",
+    "team": "WalkerTeam"
+  },
+  {
+    "domain": "WalkManagement",
+    "event": "WalkInProgress",
+    "team": "WalkerTeam"
+  },
+  {
+    "domain": "WalkManagement",
+    "event": "WalkCompleted",
+    "team": "WalkerTeam"
+  },
+  {
+    "domain": "PaymentManagement",
+    "event": "PaymentMade",
+    "team": "FinanceTeam"
+  },
+  {
+    "domain": "PaymentManagement",
+    "event": "PaymentReceived",
+    "team": "FinanceTeam"
+  },
+  {
+    "domain": "Support",
+    "event": "SupportTicketRaised",
+    "team": "CustomerSupportTeam"
+  },
+  {
+    "domain": "Support",
+    "event": "SupportTicketClosed",
+    "team": "CustomerSupportTeam"
+  }
+]
