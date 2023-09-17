@@ -1,10 +1,9 @@
 ---
-name: Dog Walking Support
+name: Support
 summary: |
   Domain for everything related to dog walking support
 owners:
-    - WalkTeam
-    - CustomerSupportTeam
+    - dboyne
 ---
 
 <Admonition>Domain for everything to do with Dog Walking Support at our business. Before adding any events or services to this domain make sure you contact the domain owners and verify it's the correct place.</Admonition>

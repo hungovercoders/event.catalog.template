@@ -3,8 +3,7 @@ name: DogManagement
 summary: |
   Domain for everything dog management
 owners:
-    - DogManagementTeam
-    - WalkTeam
+    - dboyne
 ---
 
 <Admonition>Domain for everything to do with Dog Management at our business. Before adding any events or services to this domain make sure you contact the domain owners and verify it's the correct place.</Admonition>

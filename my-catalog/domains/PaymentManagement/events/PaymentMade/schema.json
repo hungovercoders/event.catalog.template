@@ -1,0 +1,46 @@
+{
+  "$id": "https://example.com/PaymentMade.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PaymentMade",
+  "type": "object",
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "correlationId": {
+          "type": "string",
+          "description": "The ID of the user"
+        },
+        "domain": {
+          "type": "string",
+          "description": "The domain of the event"
+        },
+        "service": {
+          "type": "string",
+          "description": "The name of the service that triggered the event"
+        }
+      },
+      "required": ["correlationId", "domain"]
+    },
+    "data": {
+      "type": "object",
+      "properties": {
+        "userId": {
+          "type": "string",
+          "description": "The ID of the user"
+        },
+        "dogId": {
+          "type": "string",
+          "description": "The ID of the dog"
+        },
+        "paymentAmount": {
+          "type": "number",
+          "description": "The amount paid for the dog walking service",
+          "minimum": 1,
+          "maximum": 500,
+          "default": 20
+        }
+      }
+    }
+  }
+}

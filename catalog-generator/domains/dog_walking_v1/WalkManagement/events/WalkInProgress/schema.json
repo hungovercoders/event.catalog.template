@@ -1,0 +1,49 @@
+{
+  "$id": "https://example.com/WalkInProgress.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "WalkInProgress",
+  "type": "object",
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "correlationId": {
+          "type": "string",
+          "description": "The ID of the dog owner"
+        },
+        "domain": {
+          "type": "string",
+          "description": "The domain of the event"
+        },
+        "service": {
+          "type": "string",
+          "description": "The name of the service that triggered the event"
+        }
+      },
+      "required": ["correlationId", "domain"]
+    },
+    "data": {
+      "type": "object",
+      "properties": {
+        "ownerId": {
+          "type": "string",
+          "description": "The ID of the dog owner"
+        },
+        "walkerId": {
+          "type": "string",
+          "description": "The ID of the dog walker"
+        },
+        "dogId": {
+          "type": "string",
+          "description": "The ID of the dog being walked"
+        },
+        "startTime": {
+          "type": "string",
+          "format": "date-time",
+          "description": "When the walk started"
+        }
+      },
+      "required": ["ownerId", "walkerId", "dogId", "startTime"]
+    }
+  }
+}

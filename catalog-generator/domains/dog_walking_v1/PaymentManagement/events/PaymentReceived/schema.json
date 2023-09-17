@@ -1,0 +1,46 @@
+{
+  "$id": "https://example.com/PaymentReceived.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PaymentReceived",
+  "type": "object",
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "correlationId": {
+          "type": "string",
+          "description": "The ID of the payment transaction"
+        },
+        "domain": {
+          "type": "string",
+          "description": "The domain of the event"
+        },
+        "service": {
+          "type": "string",
+          "description": "The name of the service that received the payment"
+        }
+      },
+      "required": ["correlationId", "domain"]
+    },
+    "data": {
+      "type": "object",
+      "properties": {
+        "userId": {
+          "type": "string",
+          "description": "The ID of the user who processed the payment"
+        },
+        "walkId": {
+          "type": "string",
+          "description": "The ID of the dog walk service"
+        },
+        "paymentAmount": {
+          "type": "number",
+          "description": "The amount paid for the dog walk service",
+          "minimum": 1,
+          "maximum": 1000
+        }
+      },
+      "required": ["userId", "walkId", "paymentAmount"]
+    }
+  }
+}

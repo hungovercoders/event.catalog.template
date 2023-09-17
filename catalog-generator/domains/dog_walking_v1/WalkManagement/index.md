@@ -3,9 +3,7 @@ name: WalkManagement
 summary: |
   Domain for everything related to dog walking
 owners:
-    - WalkTeam
-    - DogManagementTeam
-    - WalkerTeam
+    - dboyne
 ---
 
 <Admonition>Domain for everything to do with Dog Walking at our business. Before adding any events or services to this domain make sure you contact the domain owners and verify it's the correct place.</Admonition>

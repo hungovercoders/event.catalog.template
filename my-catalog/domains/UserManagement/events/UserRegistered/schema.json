@@ -1,0 +1,45 @@
+{
+  "$id": "https://example.com/UserRegistered.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "UserRegistered",
+  "type": "object",
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "correlationId": {
+          "type": "string",
+          "description": "The ID of the user"
+        },
+        "domain": {
+          "type": "string",
+          "description": "The domain of the event"
+        },
+        "service": {
+          "type": "string",
+          "description": "The name of the service that triggered the event"
+        }
+      },
+      "required": ["correlationId", "domain"]
+    },
+    "data": {
+      "type": "object",
+      "properties": {
+        "userId": {
+          "type": "string",
+          "description": "The ID of the registered user"
+        },
+        "dogId": {
+          "type": "string",
+          "description": "The ID of the dog"
+        },
+        "dogWalkingTime": {
+          "type": "string",
+          "description": "Scheduled walking time for the dog",
+          "format": "date-time"
+        }
+      },
+      "required": ["userId", "dogId", "dogWalkingTime"]
+    }
+  }
+}

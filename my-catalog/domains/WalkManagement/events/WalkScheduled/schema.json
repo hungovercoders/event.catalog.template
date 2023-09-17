@@ -1,0 +1,45 @@
+{
+  "$id": "https://example.com/WalkScheduled.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "WalkScheduled",
+  "type": "object",
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "correlationId": {
+          "type": "string",
+          "description": "The ID of the correlated event"
+        },
+        "domain": {
+          "type": "string",
+          "description": "The domain of the event"
+        },
+        "service": {
+          "type": "string",
+          "description": "The name of the service that triggered the event"
+        }
+      },
+      "required": ["correlationId", "domain"]
+    },
+    "data": {
+      "type": "object",
+      "properties": {
+        "dogOwnerId": {
+          "type": "string",
+          "description": "The ID of the dog owner"
+        },
+        "walkerId": {
+          "type": "string",
+          "description": "The ID of the dog walker"
+        },
+        "scheduledTime": {
+          "type": "string",
+          "description": "The scheduled date and time of the dog walk",
+          "format": "date-time"
+        }
+      },
+      "required": ["dogOwnerId", "walkerId", "scheduledTime"]
+    }
+  }
+}

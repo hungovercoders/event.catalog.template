@@ -1,0 +1,48 @@
+{
+  "$id": "https://example.com/SupportTicketClosed.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SupportTicketClosed",
+  "type": "object",
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "correlationId": {
+          "type": "string",
+          "description": "The ID of the support ticket"
+        },
+        "domain": {
+          "type": "string",
+          "description": "The domain of the event"
+        },
+        "service": {
+          "type": "string",
+          "description": "The name of the service that triggered the event"
+        }
+      },
+      "required": ["correlationId", "domain"]
+    },
+    "data": {
+      "type": "object",
+      "properties": {
+        "supportAgentId": {
+          "type": "string",
+          "description": "The ID of the support agent who closed the ticket"
+        },
+        "dogOwnerId": {
+          "type": "string",
+          "description": "The ID of the dog owner who raised the support ticket"
+        },
+        "ticketDetail": {
+          "type": "string",
+          "description": "Detail of the support ticket"
+        },
+        "closureComment": {
+          "type": "string",
+          "description": "Comment of the support agent while closing the ticket"
+        }
+      },
+      "required": ["supportAgentId", "dogOwnerId", "ticketDetail", "closureComment"]
+    }
+  }
+}

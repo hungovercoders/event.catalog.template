@@ -3,9 +3,7 @@ name: UserManagement
 summary: |
   Domain for everything User Management in the context of Dog Walking
 owners:
-    - WalkTeam
-    - WalkerTeam
-    - SchedulingTeam
+    - dboyne
 ---
 
 <Admonition>Domain for everything to do with User Management in the context of Dog Walking at our business. Before adding any events or services to this domain make sure you contact the domain owners and verify it's the correct place.</Admonition>

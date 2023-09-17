@@ -1,0 +1,62 @@
+{
+  "$id": "https://example.com/DogProfileCreated.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DogProfileCreated",
+  "type": "object",
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "correlationId": {
+          "type": "string",
+          "description": "The ID of the user"
+        },
+        "domain": {
+          "type": "string",
+          "description": "The domain of the event"
+        },
+        "service": {
+          "type": "string",
+          "description": "The name of the service that triggered the event"
+        }
+      },
+      "required": ["correlationId", "domain"]
+    },
+    "data": {
+      "type": "object",
+      "properties": {
+        "userId": {
+          "type": "string",
+          "description": "The ID of the user"
+        },
+        "dogId": {
+          "type": "string",
+          "description": "The ID of the dog"
+        },
+        "dogProfile": {
+          "type": "object",
+          "description": "Profile representing the dog",
+          "properties": {
+            "name": {
+              "type": "string",
+              "description": "The name of the dog"
+            },
+            "breed": {
+              "type": "string",
+              "description": "The breed of the dog"
+            },
+            "age": {
+              "type": "number",
+              "description": "The age of the dog"
+            },
+            "weight": {
+              "type": "number",
+              "description": "The weight of the dog"
+            }
+          },
+          "required": ["name", "breed", "age", "weight"]
+        }
+      }
+    }
+  }
+}
