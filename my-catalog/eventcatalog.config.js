@@ -38,5 +38,41 @@ module.exports = {
       avatarUrl: 'https://randomuser.me/api/portraits/lego/3.jpg',
       role: 'Developer',
     },
+    {
+      id: 'griffir',
+      name: 'Richard Griffiths',
+      avatarUrl: 'https://randomuser.me/api/portraits/lego/3.jpg',
+      role: 'Developer',
+    },
+    {
+      id: 'DogManagementTeam',
+      name: 'DogManagement',
+      avatarUrl: 'https://pbs.twimg.com/profile_images/1262283153563140096/DYRDqKg6_400x400.png',
+      role: 'Team',
+    },
+    {
+      id: 'UserManagementTeam',
+      name: 'UserManagement',
+      avatarUrl: 'https://randomuser.me/api/portraits/lego/3.jpg',
+      role: 'Team',
+    },
+    {
+      id: 'SupportTeam',
+      name: 'Support',
+      avatarUrl: 'https://pbs.twimg.com/profile_images/1262283153563140096/DYRDqKg6_400x400.png',
+      role: 'Team',
+    },
+    {
+      id: 'WalkManagementTeam',
+      name: 'WalkManagement',
+      avatarUrl: 'https://randomuser.me/api/portraits/lego/3.jpg',
+      role: 'Team',
+    },
+    {
+      id: 'PaymentManagementTeam',
+      name: 'PaymentManagement',
+      avatarUrl: 'https://randomuser.me/api/portraits/lego/3.jpg',
+      role: 'Team',
+    }
   ],
 }
