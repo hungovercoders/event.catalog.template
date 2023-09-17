@@ -24,7 +24,7 @@ module.exports = {
     { label: 'Events', href: '/events' },
     { label: 'Visualiser', href: '/visualiser' },
     { label: '3D Node Graph', href: '/overview' },
-    { label: 'GitHub', href: 'https://github.com/boyney123/eventcatalog-demo/edit/master' }
+    { label: 'GitHub', href: 'https://github.com/dataGriff/learn.event.catalog' }
   ],
   users: [
     {
