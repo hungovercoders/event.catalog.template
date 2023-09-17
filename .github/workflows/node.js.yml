@@ -40,15 +40,15 @@ jobs:
     - run: npm run build
       working-directory: my-catalog
     - name: List directory contents domains
-      run: ls -al my-catalog/domains
+      run:  [ -d "my-catalog/domains" ] && ls -al my-catalog/domains || echo "directory does not exist"
     - name: List directory contents events
-      run: ls -al my-catalog/events
+      run: [ -d "my-catalog/events" ] && ls -al my-catalog/events || echo "directory does not exist"
     - name: List directory contents public
-      run: ls -al my-catalog/public
+      run: [ -d "my-catalog/public" ] && ls -al my-catalog/public || echo "directory does not exist"
     - name: List directory contents services
-      run: ls -al my-catalog/public
+      run: [ -d "my-catalog/services" ] && ls -al my-catalog/services || echo "directory does not exist"
     - name: List directory contents Out
-      run: ls -al my-catalog/out
+      run: [ -d "my-catalog/out" ] && ls -al my-catalog/out || echo "directory does not exist"
     - name: Upload to website blob storage
       uses: azure/CLI@v1
       with:
