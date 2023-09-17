@@ -21,6 +21,7 @@ module.exports = {
   footerLinks: [
     { label: 'Domains', href: '/domains' },
     { label: 'Services', href: '/services' },
+    { label: 'Events', href: '/events' },
     { label: 'Visualiser', href: '/visualiser' },
     { label: '3D Node Graph', href: '/overview' },
     { label: 'GitHub', href: 'https://github.com/boyney123/eventcatalog-demo/edit/master' }
