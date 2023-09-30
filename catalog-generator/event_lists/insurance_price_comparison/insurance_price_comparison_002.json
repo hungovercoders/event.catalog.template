@@ -1,0 +1,19 @@
+Based on your given example, an equivalent event catalog for an insurance price comparison system could look like this:
+
+
+[
+    {"domain": "UserManagement", "event": "UserRegistered", "team": "RegistrationTeam"},
+    {"domain": "UserManagement", "event": "UserUpdated", "team": "UserManagementTeam"},
+    {"domain": "InsuranceManagement", "event": "InsuranceQuoteRequested", "team": "QuoteTeam"},
+    {"domain": "InsuranceManagement", "event": "InsuranceQuoteProvided", "team": "QuoteTeam"},
+    {"domain": "InsuranceManagement", "event": "PolicyPurchased", "team": "SalesTeam"},
+    {"domain": "InsuranceManagement", "event": "PolicyUpdated", "team": "PolicyManagementTeam"},
+    {"domain": "InsuranceManagement", "event": "ClaimSubmitted", "team": "ClaimsTeam"},
+    {"domain": "InsuranceManagement", "event": "ClaimProcessed", "team": "ClaimsTeam"},
+    {"domain": "PaymentManagement", "event": "PaymentMade", "team": "FinanceTeam"},
+    {"domain": "PaymentManagement", "event": "PaymentReceived", "team": "FinanceTeam"},
+    {"domain": "Support", "event": "SupportTicketRaised", "team": "CustomerSupportTeam"},
+    {"domain": "Support", "event": "SupportTicketClosed", "team": "CustomerSupportTeam"}
+]
+
+This sample JSON represents the flow of activities within an insurance price comparison system. It includes user registration, updating of user profiles, requests for insurance quotes, providing insurance quotes, purchasing of policies, updating of policies, claim submission and processing, making and receiving payments, and raising and closing of support tickets. The 'team' key in each JSON object indicates which team is responsible for each domain event.

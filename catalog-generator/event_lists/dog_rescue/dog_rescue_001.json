@@ -1,0 +1,27 @@
+[
+    {
+        "domain": "DogRescue",
+        "event": "ReportLostDog",
+        "team": "RescueTeam"
+    },
+    {
+        "domain": "DogRescue",
+        "event": "RescueLostDog",
+        "team": "RescueTeam"
+    },
+    {
+        "domain": "DogRescue",
+        "event": "AdoptRescuedDog",
+        "team": "AdoptionTeam"
+    },
+    {
+        "domain": "DogRescue",
+        "event": "ProvideMedicalCare",
+        "team": "MedicalTeam"
+    },
+    {
+        "domain": "DogRescue",
+        "event": "ProvidePostAdoptionSupport",
+        "team": "SupportTeam"
+    }
+]

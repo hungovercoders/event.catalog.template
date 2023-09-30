@@ -1,0 +1,67 @@
+[
+    {
+        "domain": "UserManagement",
+        "event": "UserRegistered",
+        "team": "UserManagementTeam"
+    },
+    {
+        "domain": "PolicyManagement",
+        "event": "PolicyCreated",
+        "team": "PolicyManagementTeam"
+    },
+    {
+        "domain": "PolicyManagement",
+        "event": "PolicyUpdated",
+        "team": "PolicyManagementTeam"
+    },
+    {
+        "domain": "PolicyComparison",
+        "event": "ComparisonInitiated",
+        "team": "ComparisonTeam"
+    },
+    {
+        "domain": "PolicyComparison",
+        "event": "BestPolicySelected",
+        "team": "ComparisonTeam"
+    },
+    {
+        "domain": "Underwriting",
+        "event": "UnderwritingProcessStarted",
+        "team": "UnderwritingTeam"
+    },
+    {
+        "domain": "Underwriting",
+        "event": "UnderwritingProcessCompleted",
+        "team": "UnderwritingTeam"
+    },
+    {
+        "domain": "ClaimManagement",
+        "event": "ClaimSubmitted",
+        "team": "ClaimsTeam"
+    },
+    {
+        "domain": "ClaimManagement",
+        "event": "ClaimProcessed",
+        "team": "ClaimsTeam"
+    },
+    {
+        "domain": "PaymentManagement",
+        "event": "PaymentInitiated",
+        "team": "FinanceTeam"
+    },
+    {
+        "domain": "PaymentManagement",
+        "event": "PaymentReceived",
+        "team": "FinanceTeam"
+    },
+    {
+        "domain": "Support",
+        "event": "SupportTicketOpened",
+        "team": "CustomerSupportTeam"
+    },
+    {
+        "domain": "Support",
+        "event": "SupportTicketResolved",
+        "team": "CustomerSupportTeam"
+    }
+]

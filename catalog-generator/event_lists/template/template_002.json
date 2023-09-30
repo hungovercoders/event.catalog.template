@@ -1,0 +1,14 @@
+[
+    {"domain": "UserManagement", "event": "UserRegistered", "team": "UserManagementTeam"},
+    {"domain": "InsuranceManagement", "event": "InsuranceProfileCreated", "team": "InsuranceManagementTeam"},
+    {"domain": "InsuranceManagement", "event": "InsuranceProfileUpdated", "team": "InsuranceManagementTeam"},
+    {"domain": "QuoteManagement", "event": "QuoteRequested", "team": "QuoteTeam"},
+    {"domain": "QuoteManagement", "event": "QuoteProvided", "team": "QuoteTeam"},
+    {"domain": "PolicyManagement", "event": "PolicyIssued", "team": "PolicyTeam"},
+    {"domain": "PolicyManagement", "event": "PolicyUpdated", "team": "PolicyTeam"},
+    {"domain": "PolicyManagement", "event": "PolicyCancelled", "team": "PolicyTeam"},
+    {"domain": "PaymentManagement", "event": "PaymentMade", "team": "FinanceTeam"},
+    {"domain": "PaymentManagement", "event": "PaymentReceived", "team": "FinanceTeam"},
+    {"domain": "CustomerSupport", "event": "SupportTicketRaised", "team": "CustomerSupportTeam"},
+    {"domain": "CustomerSupport", "event": "SupportTicketClosed", "team": "CustomerSupportTeam"}
+]

@@ -1,0 +1,57 @@
+[
+    {
+        "domain": "UserManagement",
+        "event": "AdopterRegistered",
+        "team": "UserManagementTeam"
+    },
+    {
+        "domain": "UserManagement",
+        "event": "RescueVolunteerRegistered",
+        "team": "UserManagementTeam"
+    },
+    {
+        "domain": "DogManagement",
+        "event": "DogProfileCreated",
+        "team": "DogManagementTeam"
+    },
+    {
+        "domain": "DogManagement",
+        "event": "DogProfileUpdated",
+        "team": "DogManagementTeam"
+    },
+    {
+        "domain": "AdoptionManagement",
+        "event": "AdoptionApplicationSubmitted",
+        "team": "AdoptionTeam"
+    },
+    {
+        "domain": "AdoptionManagement",
+        "event": "AdoptionApplicationApproved",
+        "team": "AdoptionTeam"
+    },
+    {
+        "domain": "AdoptionManagement", 
+        "event": "AdoptionApplicationRejected",
+        "team": "AdoptionTeam"
+    },
+    {
+        "domain": "PaymentManagement",
+        "event": "DonationMade",
+        "team": "FinanceTeam"
+    },
+    {
+        "domain": "PaymentManagement",
+        "event": "DonationReceived",
+        "team": "FinanceTeam"
+    },
+    {
+        "domain": "Support",
+        "event": "SupportTicketRaised",
+        "team": "CustomerSupportTeam"
+    },
+    {
+        "domain": "Support",
+        "event": "SupportTicketClosed",
+        "team": "CustomerSupportTeam"
+    }
+]

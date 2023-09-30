@@ -24,3 +24,4 @@ vscode:
   extensions:
     - dbaeumer.vscode-eslint
     - ms-python.python
+    - tabnine.tabnine-vscode

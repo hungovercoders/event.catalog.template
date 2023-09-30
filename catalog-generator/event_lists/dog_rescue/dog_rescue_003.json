@@ -1,0 +1,92 @@
+[
+    {
+        "domain": "UserManagement",
+        "event": "UserRegistered",
+        "team": "RegistrationTeam"
+    },
+    {
+        "domain": "UserManagement",
+        "event": "UserLogin",
+        "team": "RegistrationTeam"
+    },
+    {
+        "domain": "UserManagement",
+        "event": "UserPasswordReset",
+        "team": "RegistrationTeam"
+    },
+    {
+        "domain": "DogManagement",
+        "event": "DogProfileCreated",
+        "team": "DogManagementTeam"
+    },
+    {
+        "domain": "DogManagement",
+        "event": "DogProfileUpdated",
+        "team": "DogManagementTeam"
+    },
+    {
+        "domain": "DogManagement",
+        "event": "DogAdoptionInitiated",
+        "team": "AdoptionTeam"
+    },
+    {
+        "domain": "DogManagement",
+        "event": "DogAdopted",
+        "team": "AdoptionTeam"
+    },
+    {
+        "domain": "MedicalManagement",
+        "event": "MedicalRecordCreated",
+        "team": "MedicalTeam"
+    },
+    {
+        "domain": "MedicalManagement",
+        "event": "MedicalRecordUpdated",
+        "team": "MedicalTeam"
+    },
+    {
+        "domain": "VolunteerManagement",
+        "event": "VolunteerRegistered",
+        "team": "VolunteerTeam"
+    },
+    {
+        "domain": "VolunteerManagement",
+        "event": "VolunteerAssigned",
+        "team": "VolunteerTeam"
+    },
+    {
+        "domain": "FosterManagement",
+        "event": "FosterRequestSubmitted",
+        "team": "FosterTeam"
+    },
+    {
+        "domain": "FosterManagement",
+        "event": "FosterRequestApproved",
+        "team": "FosterTeam"
+    },
+    {
+        "domain": "DonationManagement",
+        "event": "DonationReceived",
+        "team": "DonationTeam"
+    },
+    {
+        "domain": "EventManagement",
+        "event": "EventScheduled",
+        "team": "EventTeam"
+    },
+    {
+        "domain": "EventManagement",
+        "event": "ParticipantRegisteredForEvent",
+        "team": "EventTeam"
+    },
+    {
+        "domain": "Support",
+        "event": "SupportTicketRaised",
+        "team": "CustomerSupportTeam"
+    },
+    {
+        "domain": "Support",
+        "event": "SupportTicketClosed",
+        "team": "CustomerSupportTeam"
+    }
+]

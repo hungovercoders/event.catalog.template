@@ -1,0 +1,7 @@
+[
+    {"domain": "DogRescueCreate", "event": "DogRescueCreated", "team": "BackendTeam"},
+    {"domain": "DogRescueUpdate", "event": "DogRescueUpdated", "team": "BackendTeam"},
+    {"domain": "DogRescueDelete", "event": "DogRescueDeleted", "team": "BackendTeam"},
+    {"domain": "VolunteerAdd", "event": "VolunteerAdded", "team": "OutreachTeam"},
+    {"domain": "VolunteerRemove", "event": "VolunteerRemoved", "team": "OutreachTeam"}
+]

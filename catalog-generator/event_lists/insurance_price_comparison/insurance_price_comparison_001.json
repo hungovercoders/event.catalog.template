@@ -1,0 +1,9 @@
+[
+    {"domain": "QuoteCreation", "event": "QuoteCreated", "team": "QuoteManagementTeam"},
+    {"domain": "PriceComparison", "event": "PriceCompared", "team": "PricingTeam"},
+    {"domain": "PolicyPurchase", "event": "PolicyPurchased", "team": "SalesTeam"},
+    {"domain": "ClaimSubmission", "event": "ClaimSubmitted", "team": "ClaimsProcessingTeam"},
+    {"domain": "PolicyModification", "event": "PolicyModified", "team": "PolicyManagementTeam"},
+    {"domain": "ClientRegistration", "event": "ClientRegistered", "team": "ClientRelationsTeam"},
+    {"domain": "PaymentProcessing", "event": "PaymentProcessed", "team": "PaymentOperationsTeam"}
+]

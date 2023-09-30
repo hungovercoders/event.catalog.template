@@ -1,0 +1,37 @@
+[
+    {
+        "domain": "DogWalking",
+        "event": "WalkInitiated",
+        "team": "DogWalkers"
+    },
+    {
+        "domain": "DogWalking",
+        "event": "RouteSelected",
+        "team": "RoutePlanners"
+    },
+    {
+        "domain": "DogWalking",
+        "event": "DogPickedUp",
+        "team": "DogHandlers"
+    },
+    {
+        "domain": "DogWalking",
+        "event": "WalkInProgress",
+        "team": "DogWalkers"
+    },
+    {
+        "domain": "DogWalking",
+        "event": "WalkCompleted",
+        "team": "DogHandlers"
+    },
+    {
+        "domain": "DogWalking",
+        "event": "DogDroppedOff",
+        "team": "DogHandlers"
+    },
+    {
+        "domain": "DogWalking",
+        "event": "FeedbackReceived",
+        "team": "CustomerSupport"
+    }
+]

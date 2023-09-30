@@ -1,0 +1,57 @@
+[
+{
+"domain": "UserManagement",
+"event": "DogWalkerRegistered",
+"team": "UserManagementTeam"
+},
+{
+"domain": "UserManagement",
+"event": "DogOwnerRegistered",
+"team": "UserManagementTeam"
+},
+{
+"domain": "AvailabilityManagement",
+"event": "AvailabilityUpdated",
+"team": "ScheduleManagementTeam"
+},
+{
+"domain": "WalkManagement",
+"event": "WalkRequested",
+"team": "WalkManagementTeam"
+},
+{
+"domain": "WalkManagement",
+"event": "WalkConfirmed",
+"team": "WalkManagementTeam"
+},
+{
+"domain": "WalkManagement",
+"event": "WalkCompleted",
+"team": "WalkManagementTeam"
+},
+{
+"domain": "PaymentManagement",
+"event": "PaymentMade",
+"team": "FinanceTeam"
+},
+{
+"domain": "PaymentManagement",
+"event": "PaymentReceived",
+"team": "FinanceTeam"
+},
+{
+"domain": "ReviewManagement",
+"event": "ReviewSubmitted",
+"team": "ReviewManagementTeam"
+},
+{
+"domain": "IssueManagement",
+"event": "IssueRaised",
+"team": "CustomerSupportTeam"
+},
+{
+"domain": "IssueManagement",
+"event": "IssueResolved",
+"team": "CustomerSupportTeam"
+}
+]
