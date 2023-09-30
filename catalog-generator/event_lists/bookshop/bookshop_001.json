@@ -1,0 +1,42 @@
+[
+    {
+        "domain": "Inventory",
+        "event": "BookAdded",
+        "team": "InventoryManagement"
+    },
+    {
+        "domain": "Inventory",
+        "event": "BookRemoved",
+        "team": "InventoryManagement"
+    },
+    {
+        "domain": "ShoppingCart",
+        "event": "ItemAdded",
+        "team": "CustomersService"
+    },
+    {
+        "domain": "ShoppingCart",
+        "event": "ItemRemoved",
+        "team": "CustomersService"
+    },
+    {
+        "domain": "Orders",
+        "event": "OrderPlaced",
+        "team": "OrdersProcessing"
+    },
+    {
+        "domain": "Orders",
+        "event": "OrderDelivered",
+        "team": "DeliveryService"
+    },
+    {
+        "domain": "Payments",
+        "event": "PaymentReceived",
+        "team": "Finance"
+    },
+    {
+        "domain": "Payments",
+        "event": "RefundIssued",
+        "team": "Finance"
+    }
+]
